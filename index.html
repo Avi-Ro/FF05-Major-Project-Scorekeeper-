@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="do.js"></script>
+    <title>AVI MAJOR PROJECT</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="fav.png" />
+  </head>
+  <body>
+    <div class="scorecontainer">
+      <h1 class="grad">MY SCOREKEEPER GAME</h1>
+      <div class="team">
+        <div align="center">
+          <h1 style="margin-top: 2px">PLAYER  1</h1>
+          <h2>
+            <span style="font-size: 30px">Point</span> <br />
+            <span id="Player1point">0</span>
+          </h2>
+          <div class="team">
+            <div>
+              <button class="AddPoint" name="btn" onclick="add(1)">
+                Add Point
+              </button>
+            </div>
+            <div>
+              <button class="DeductPoint" name="btn" onclick="deduct(1)">
+                Deduct Point
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="vertical"></div>
+        <div align="center">
+          <h1 style="margin-top: 2px">PLAYER  2</h1>
+          <h2>
+            <span style="font-size: 30px">Point</span> <br />
+            <span id="Player2point">0</span>
+          </h2>
+          <div class="team">
+            <div>
+              <button class="AddPoint" name="btn" onclick="add(2)">
+                Add Point
+              </button>
+            </div>
+            <div>
+              <button class="DeductPoint" name="btn" onclick="deduct(2)">
+                Deduct Point
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div align="center" class="changebtn">
+      <button class="timerlink" id="myBtn" onclick="reset()">
+        Reset Match
+      </button>
+    </div>
+    <script type="text/javascript">
+      var btn = document.getElementsByName("btn");
+      btn[0].disabled = false;
+      btn[1].disabled = false;
+      btn[2].disabled = false;
+      btn[3].disabled = false;
+    </script>
+  </body>
+</html>
